@@ -38,7 +38,7 @@ class ProductSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Product
-        fields = ['id', 'name', 'price', 'description', 'image','category','category_id']  # Replace with actual fields
+        fields = ['id', 'name', 'price', 'description', 'image','category','category_id']  
 
 # Cart Item Serializer
 class CartItemSerializer(serializers.ModelSerializer):
@@ -50,7 +50,7 @@ class CartItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = CartItem
         fields = ['id','cart','product', 'product_id', 'quantity']
- # Add 'quantity' if applicable
+ 
 
 # Cart Serializer
 class CartSerializer(serializers.ModelSerializer):
@@ -58,7 +58,7 @@ class CartSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Cart
-        fields = ['id', 'user', 'items']  # Include 'user' if Cart is user-specific
+        fields = ['id', 'user', 'items']  
 
 # Order Serializer
 class OrderSerializer(serializers.ModelSerializer):

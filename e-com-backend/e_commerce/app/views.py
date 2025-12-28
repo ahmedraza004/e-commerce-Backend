@@ -6,7 +6,6 @@ from rest_framework.response import Response
 from rest_framework import filters
 from .serializers import ProductSerializer, CartSerializer, OrderSerializer, CartItemSerializer,RegisterSerializer,CategorySerializer
 from .models import Product, Cart, CartItem, Order,Category
-from rest_framework.views import APIView
 from rest_framework.permissions import AllowAny,IsAuthenticated,IsAdminUser,BasePermission
 from rest_framework import status,generics
 
